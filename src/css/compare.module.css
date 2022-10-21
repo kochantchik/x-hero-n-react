@@ -1,0 +1,99 @@
+.maincontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: stretch;
+  border: 3px solid #918ca7;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0rem 1rem 1rem 1rem;
+  background-color: #171721;
+  height: 34rem;
+}
+
+.sideContainer{
+  display: flex;
+  flex-flow: column;
+  min-width: 30%;
+  max-width: 30%;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  border: 3px solid #918ca7;
+}
+
+.centralContainer{
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #918ca7;
+}
+
+.columnsText{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  align-self: stretch;
+  margin: 0.2rem 0.2rem;
+  padding: 0.2rem 0.2rem;
+  border: 1px solid #918ca7;
+}
+
+.inactive {
+  color: gray;
+}
+
+.compareLine{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  text-align: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid #918ca7;
+}
+
+.compareCenter{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-size: 14px;
+}
+
+.lineLeft{
+  text-align: left;
+  min-width: 20%;
+}
+
+.lineRight{
+  text-align: right;
+  min-width: 20%;
+}
+
+.red{
+  color: lightcoral;
+}
+
+.green{
+  color: greenyellow;
+}
+
+.gold{
+  color: gold;
+}
+
+.lumber {
+  color: greenyellow;
+}
+
+.borderTop{
+  border-top: 1px solid #918ca7;
+}

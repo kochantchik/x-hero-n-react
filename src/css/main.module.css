@@ -1,0 +1,39 @@
+.maincontainer {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 3px solid #918ca7;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 142px;
+  padding: .2rem;
+  border: 3px solid #918ca7;
+}
+
+.column{
+  display: flex;
+  flex-flow: column;
+  max-width: 410px;
+}
+
+.columnBoss{
+  display: flex;
+  flex-flow: column;
+  max-width: 680px;
+}
+
+.column p, .columnBoss p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
