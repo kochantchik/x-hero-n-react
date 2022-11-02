@@ -1,11 +1,10 @@
 .maincontainer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-self: stretch;
-  border: 3px solid #918ca7;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  margin: 0rem 1rem 1rem 1rem;
-  background-color: #171721;
+  padding: 1em;
+  text-align: center;
+}
+
+.maincontainer > p {
+  background-color: #3b384d;
+  border-radius: 0.5em;
+  padding: 0.5em;
 }

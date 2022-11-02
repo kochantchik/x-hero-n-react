@@ -7,8 +7,6 @@ import Bookmark from './components/Bookmark';
 import React from 'react';
 import Compare from './components/Compare';
 import Build from './components/Build';
-import {DndProvider} from 'react-dnd';
-import {HTML5Backend} from 'react-dnd-html5-backend';
 
 export default function App() {
 
@@ -240,13 +238,16 @@ export default function App() {
   }
 
   return (
-    <DndProvider backend={HTML5Backend}>
-      <div className="App">
-        <Navbar />
-        <Bookmark 
-          click = {chooseMode}
-          activeMode = {mode}  
-        />
+    <div className="App">
+      <Navbar 
+        className = "navbar"
+      />
+      <Bookmark 
+        click = {chooseMode}
+        activeMode = {mode}  
+        className = "bookmark"
+      />
+      <div className="panel">
         {mode.showpanel && <Showpanel
           item = {item}
           items = {reconstrucktedLibrary}
@@ -263,12 +264,13 @@ export default function App() {
         {mode.build && <Build
 
         />}
-        <Main
-          itemLibrary = {itemLibrary}
-          click = {chooseItem}
-        />
-        <Footer />
       </div>
-    </DndProvider>
+      <Main
+        itemLibrary = {itemLibrary}
+        click = {chooseItem}
+        className="main"
+      />
+      <Footer className="footer"/>
+    </div>
   );
 }

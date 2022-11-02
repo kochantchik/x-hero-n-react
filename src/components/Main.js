@@ -55,18 +55,6 @@ export default function Main(props) {
   return (
     <div className={style.maincontainer}>
       <div className={style.column}>
-        <p>Охотничий Зал / Древо Вечности / Лунный Колодец / Обсерватория</p>
-        <div className={style.line}>
-          {other}
-        </div>
-      </div>
-      <div className={style.column}>
-        <p>Лавка Гоблина</p>
-        <div className={style.line}>
-          {goblin}
-        </div>
-      </div>
-      <div className={style.column}>
         <p>Обитель Духов</p>
         <div className={style.line}>
           {spirits}
@@ -100,6 +88,18 @@ export default function Main(props) {
         <p>Дроп с боссов</p>
         <div className={style.line}>
           {boss}
+        </div>
+      </div>
+      <div className={style.column}>
+        <p>Охотничий Зал / Древо Вечности / Лунный Колодец</p>
+        <div className={style.line}>
+          {other}
+        </div>
+      </div>
+      <div className={style.column}>
+        <p>Лавка Гоблина</p>
+        <div className={style.line}>
+          {goblin}
         </div>
       </div>
     </div>

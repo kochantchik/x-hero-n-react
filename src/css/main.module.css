@@ -1,12 +1,13 @@
 .maincontainer {
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
+  grid-column: 2/3;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1em;
+  margin: 1em 0;
   border: 3px solid #918ca7;
+  border-radius: 1em;
+  grid-auto-flow: dense;
 }
 
 .line {
@@ -14,26 +15,54 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-height: 142px;
-  padding: .2rem;
-  border: 3px solid #918ca7;
 }
 
 .column{
   display: flex;
   flex-flow: column;
-  max-width: 410px;
+  flex-shrink: 1;
+  background-color: #3b384d;
+  border-radius: 1em;
+  padding: 0.5em;
+  gap: 0.5em;
+  border: 1px solid #918ca7;
 }
 
 .columnBoss{
   display: flex;
   flex-flow: column;
-  max-width: 680px;
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #3b384d;
+  border-radius: 1em;
+  padding: 0.5em;
+  gap: 0.5em;
+  border: 1px solid #918ca7;
 }
 
 .column p, .columnBoss p{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  .maincontainer{
+    grid-template-columns: 1fr 1fr;
+  }
+  .columnBoss{
+    grid-column: span 1;
+    grid-row: 3/6;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .maincontainer{
+    grid-template-columns: 1fr;
+  }
+  .columnBoss{
+    grid-row: span 1;
+    grid-column: span 1;
+  }
 }

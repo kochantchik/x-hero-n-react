@@ -4,8 +4,8 @@ import style from '../css/compare.module.css'
 export default function Compare(props) {
   return (
     <div className={style.maincontainer}>
-      <div className={style.sideContainer}>
-        <img 
+      <div className={style.block}>
+        <img className={style.icon}
           src={'./img/' + props.item.path + '.png'}
           alt=""
         />
@@ -33,8 +33,8 @@ export default function Compare(props) {
           <p>{props.item.pas}</p>
         </div>
       </div>
-      <div className={style.centralContainer}>
-        <div className={style.compareLine + " " + style.borderTop}>
+      <div className={style.block}>
+        <div className={style.compareLine}>
           <p className={style.lineLeft + " " + 
             (props.compare.str[1] === "l" ? style.green : 
             props.compare.str[1] === "r" ? style.red : "")
@@ -203,8 +203,8 @@ export default function Compare(props) {
           }>{props.compareItem.value}</p>
         </div>
       </div>
-      <div className={style.sideContainer}>
-        <img 
+      <div className={style.block}>
+        <img className={style.icon}
           src={'./img/' + props.compareItem.path + '.png'}
           alt=""
         />

@@ -1,20 +1,23 @@
 .marks{
+  grid-column: 2 / 3;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0.5rem 0 0 0.5rem;
-  gap: 1.3rem;
+  padding: 1em 0 0 1em ;
+  gap: 0.5rem;
   width: calc(100% - 3rem - 6px);
 }
 
 .marks p{
   display: flex;
+  align-items: center;
   padding: 0.4rem;
   border: 3px solid #918ca7;
   border-bottom: 0;
   border-radius: 10px 10px 0 0;
   font-weight: 600;
   cursor: pointer;
+  height: 2rem;
 }
 
 .active {
@@ -28,5 +31,5 @@
 
 .inactive {
   color: #d4d4d4;
-  background-color: #171721;
+  background-color: #3b384d;
 }

@@ -1,36 +1,21 @@
 .maincontainer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-self: stretch;
-  border: 3px solid #918ca7;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  margin: 0rem 1rem 1rem 1rem;
-  background-color: #171721;
-  height: 34rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 1em;
+  gap: 1em;
 }
 
-.sideContainer{
+.block{
   display: flex;
-  flex-flow: column;
-  min-width: 30%;
-  max-width: 30%;
-  align-self: stretch;
-  justify-content: center;
-  align-items: center;
-  padding: 0.3rem;
-  border: 3px solid #918ca7;
-}
-
-.centralContainer{
-  display: flex;
-  flex-grow: 1;
   flex-flow: column;
   align-self: stretch;
   justify-content: center;
   align-items: center;
-  border: 3px solid #918ca7;
+  padding: 0.5em;
+  background-color: #3b384d;
+  border-radius: 1em;
+  gap: 0.3em;
 }
 
 .columnsText{
@@ -40,9 +25,16 @@
   align-items: center;
   flex-flow: column;
   align-self: stretch;
-  margin: 0.2rem 0.2rem;
-  padding: 0.2rem 0.2rem;
-  border: 1px solid #918ca7;
+  background-color: #181823;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+.icon {
+  background-color: #181823;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.2em;
 }
 
 .inactive {
@@ -55,17 +47,21 @@
   align-items: center;
   align-self: stretch;
   text-align: center;
-  padding: 0 1rem;
-  border-bottom: 1px solid #918ca7;
+  background-color: #181823;
+  border-radius: 0.5em;
+  padding: 0 0.5em;
 }
 
 .compareCenter{
   display: flex;
+  flex-grow: 1;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   align-self: stretch;
   font-size: 14px;
+  border: 1px solid #918ca7;
+  border-radius: 0.5em;
 }
 
 .lineLeft{
@@ -92,8 +88,4 @@
 
 .lumber {
   color: greenyellow;
-}
-
-.borderTop{
-  border-top: 1px solid #918ca7;
 }
