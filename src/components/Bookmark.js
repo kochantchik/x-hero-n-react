@@ -12,10 +12,10 @@ export default function Bookmark(props) {
         onClick={props.click}
         className={props.activeMode.compare ? style.active : style.inactive}
       >Сравнение Артефактов</p>
-      <p 
+      {false && <p 
         onClick={props.click}
         className={props.activeMode.build ? style.active : style.inactive}
-      >Сборка</p>
+      >Сборка</p>}
     </div>
   )
 }
