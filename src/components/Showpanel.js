@@ -30,7 +30,7 @@ export default function Showpanel(props) {
       
       <div className={style.columnBlock}> 
         <img className={style.icon}
-          src={'./img/' + props.item.path + '.png'}
+          src={'./img/items/' + props.item.path + '.png'}
           alt=""
         />
         <div className={style.columnsText}>

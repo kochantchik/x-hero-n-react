@@ -23,7 +23,7 @@ export default function Main(props) {
                   click = {props.click}
                   title = {alldata[i].name}
                 />
-    if (alldata[i].path !== "svitok"){
+    if (alldata[i].path !== "scroll"){
       switch(alldata[i].shop){
         case("Лавка Гоблина"):
           goblin.push(item)

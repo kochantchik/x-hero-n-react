@@ -6,7 +6,7 @@ export default function Item(props) {
   return (
     <div className={style.maincontainer}>
       <img
-        src={'./img/' + props.path + '.png'}
+        src={'./img/items/' + props.path + '.png'}
         alt={props.alt}
         title={props.title}
         onClick={props.click}

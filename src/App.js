@@ -67,7 +67,7 @@ export default function App() {
 
   const [item, setItem] = React.useState(
     {
-      name: "Выберите Предмет", path: "svitok", shop: "", color: "",
+      name: "Выберите Предмет", path: "scroll", shop: "", color: "",
       hpb: "", hprb: "", mpb: "", mprb: "", armb: "",
       act: "", pas: "", used: [], comp: [], 
       circle: "", line: "", number: "",

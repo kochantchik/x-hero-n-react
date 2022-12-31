@@ -6,7 +6,7 @@ export default function Compare(props) {
     <div className={style.maincontainer}>
       <div className={style.block}>
         <img className={style.icon}
-          src={'./img/' + props.item.path + '.png'}
+          src={'./img/items/' + props.item.path + '.png'}
           alt=""
         />
         <div className={style.columnsText}>
@@ -205,7 +205,7 @@ export default function Compare(props) {
       </div>
       <div className={style.block}>
         <img className={style.icon}
-          src={'./img/' + props.compareItem.path + '.png'}
+          src={'./img/items/' + props.compareItem.path + '.png'}
           alt=""
         />
         <div className={style.columnsText}>
