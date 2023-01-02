@@ -1,0 +1,18 @@
+.skilllevel {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  background-color: var(--dark);
+  padding: 1em;
+  border-radius: 1em;
+  gap: 0.5em;
+  justify-content: space-between;
+  box-shadow: 3px 3px 3px black;
+}
+
+.mana {
+  background-color: var(--mp);
+  text-align: center;
+  border-radius: 0.5em;
+  font-weight: bold;
+}

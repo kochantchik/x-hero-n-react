@@ -1,14 +1,17 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer'
+import Navbar from './components/general/Navbar/Navbar';
+import Footer from './components/general/Footer/Footer'
 import Main from './components/Main';
 import Showpanel from './components/Showpanel';
 import Bookmark from './components/Bookmark';
 import React from 'react';
 import Compare from './components/Compare';
 import Build from './components/Build';
+import Heroes from './components/heroes/Heroes';
+import Bosses from './components/bosses/Bosses';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-export default function App() {
+export default function App(props) {
 
   const itemLibrary = require('./database.json')
 
@@ -83,7 +86,7 @@ export default function App() {
 
   const [compareItem, setCompareItem] = React.useState(
     {
-      name: "Выберите Предмет", path: "svitok", shop: "", color: "",
+      name: "Выберите Предмет", path: "scroll", shop: "", color: "",
       hpb: "", hprb: "", mpb: "", mprb: "", armb: "",
       act: "", pas: "", used: [], comp: [], 
       circle: "", line: "", number: "",
@@ -238,39 +241,49 @@ export default function App() {
   }
 
   return (
-    <div className="App">
-      <Navbar 
-        className = "navbar"
-      />
-      <Bookmark 
-        click = {chooseMode}
-        activeMode = {mode}  
-        className = "bookmark"
-      />
-      <div className="panel">
-        {mode.showpanel && <Showpanel
-          item = {item}
-          items = {reconstrucktedLibrary}
-          mainStat = {mainStat}
-          click = {chooseStat}
-          clickComp = {chooseItem}
-          clickBoss = {chooseBoss}
-        />}
-        {mode.compare && <Compare
-          item = {item}
-          compareItem = {compareItem}
-          compare = {compare}
-        />}
-        {mode.build && <Build
+    <BrowserRouter>
+      <div>
+        <Navbar 
+          className = "navbar"
+        />
+        <Routes>
+          <Route path='/'
+            element={<div className='App'>
+              <Bookmark 
+                click = {chooseMode}
+                activeMode = {mode}  
+                className = "bookmark"
+              />
+              <div className="panel">
+                {mode.showpanel && <Showpanel
+                  item = {item}
+                  items = {reconstrucktedLibrary}
+                  mainStat = {mainStat}
+                  click = {chooseStat}
+                  clickComp = {chooseItem}
+                  clickBoss = {chooseBoss}
+                />}
+                {mode.compare && <Compare
+                  item = {item}
+                  compareItem = {compareItem}
+                  compare = {compare}
+                />}
+                {mode.build && <Build
 
-        />}
+                />}
+              </div>
+              <Main
+                itemLibrary = {itemLibrary}
+                click = {chooseItem}
+                className="main"
+              />
+            </div>}
+          />
+          <Route path='/heroes' element={<Heroes heroes={props.heroes} skills={props.skills}/>}/>
+          <Route path='/bosses' element={<Bosses />}/>
+        </Routes>
+        <Footer className="footer"/>
       </div>
-      <Main
-        itemLibrary = {itemLibrary}
-        click = {chooseItem}
-        className="main"
-      />
-      <Footer className="footer"/>
-    </div>
+    </BrowserRouter>
   );
 }

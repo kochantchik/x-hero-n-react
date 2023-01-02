@@ -5,13 +5,24 @@
   margin: 0;
 }
 
+:root {
+  --light: #f5f1f1;
+  --dark: #181823;
+  --accent: #e4ba75;
+  --main: #594483;
+  --light-accent:#857ca5;
+  --dark-accent: #3b384d;
+  --hp: #009900;
+  --mp: #0099cc;
+}
+
 html {
   font-family:"Roboto Slab";
-  color: #f5f1f1;
+  color: var(--light);
 }
 
 body {
-  background-color: #181823;
+  background-color: var(--dark);
 }
 
 /*#6278aa*/

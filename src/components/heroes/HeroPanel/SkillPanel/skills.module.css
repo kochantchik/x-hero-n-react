@@ -1,0 +1,11 @@
+.skills {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tabs {
+  display: flex;
+  gap: 1em;
+  margin-right: 1em;
+}

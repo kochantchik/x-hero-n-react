@@ -1,0 +1,16 @@
+.statline{
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.statline img{
+  width: 24px;
+}
+
+.perLevel {
+  filter: opacity(70%);
+  font-size: 0.9em;
+}

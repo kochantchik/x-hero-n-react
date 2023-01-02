@@ -1,9 +1,14 @@
 .footer {
   grid-column: 1/-1;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
   padding: 1rem;
   font-size: smaller;
+}
+
+.footer a {
+  color: var(--light);
 }

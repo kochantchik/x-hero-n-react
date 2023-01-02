@@ -1,0 +1,50 @@
+.heropanel {
+  grid-column: 2 / -2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--light-accent);
+  border-radius: 1em;
+  margin: 1em 0em;
+  padding: 1em;
+  gap: 1em;
+}
+
+.column{
+  background-color: var(--dark-accent);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 5px 5px 5px var(--dark);
+  gap: 0.3em;
+}
+
+.line{
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.line > img {
+  width: 24px;
+}
+
+.bar {
+  border-radius: 0.5em;
+  align-self: stretch;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px var(--dark);
+}
+
+.hp {
+  background-color: var(--hp);
+}
+
+.mp {
+  background-color: var(--mp);
+}

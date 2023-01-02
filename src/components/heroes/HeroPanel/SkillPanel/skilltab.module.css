@@ -1,0 +1,12 @@
+.skilltab {
+  background-color: var(--dark);
+  padding: 1em;
+  border-radius: 1em 1em 0em 0;
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+.active {
+  background-color: var(--dark-accent);
+  filter: opacity(100%);
+}

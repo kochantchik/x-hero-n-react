@@ -1,0 +1,8 @@
+.bosses {
+  display: flex;
+  flex-flow: column;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}

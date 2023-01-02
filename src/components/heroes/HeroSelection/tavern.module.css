@@ -1,0 +1,22 @@
+.tavern {
+  background-color: var(--dark-accent);
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 5px 5px 5px var(--dark);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.heroes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.5em;
+}
+
+.heroes > img {
+  cursor: pointer;
+}
