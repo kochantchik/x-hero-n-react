@@ -1,6 +1,6 @@
 .heroselection {
   grid-column: 2/-2;
-  background-color: var(--light-accent);
+  background-color: #857ca5;
   border-radius: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;

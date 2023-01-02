@@ -1,8 +1,8 @@
 .tavern {
-  background-color: var(--dark-accent);
+  background-color: #3b384d;
   border-radius: 1em;
   padding: 1em;
-  box-shadow: 5px 5px 5px var(--dark);
+  box-shadow: 5px 5px 5px #181823;
   display: flex;
   flex-flow: column;
   justify-content: center;

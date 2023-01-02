@@ -2,7 +2,7 @@
   display: flex;
   flex-grow: 1;
   flex-flow: column;
-  background-color: var(--dark);
+  background-color: #181823;
   padding: 1em;
   border-radius: 1em;
   gap: 0.5em;
@@ -11,7 +11,7 @@
 }
 
 .mana {
-  background-color: var(--mp);
+  background-color: #0099cc;
   text-align: center;
   border-radius: 0.5em;
   font-weight: bold;

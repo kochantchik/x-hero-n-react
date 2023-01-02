@@ -1,5 +1,5 @@
 .skillinfo{
-  background-color: var(--dark-accent);
+  background-color: #3b384d;
   border-radius: 0 1em 1em 1em;
   padding: 1em;
   grid-column: 1/-1;
@@ -13,7 +13,7 @@
   padding: 1em 2em;
   gap: 1em;
   align-items: center;
-  background-color: var(--dark);
+  background-color: #181823;
   border-radius: 1em;
   box-shadow: 3px 3px 3px black;
 }
