@@ -20,3 +20,7 @@
 .heroes > img {
   cursor: pointer;
 }
+
+.opacity {
+  filter: opacity(50%) blur(2px);
+}

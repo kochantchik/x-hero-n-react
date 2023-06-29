@@ -11,6 +11,11 @@ export default function Tavern(props) {
         title={hero.hero}
         key={200 + index}
         onClick={props.chooseHero}
+        className={
+          ((hero.mainAtr === 'str' && props.filter.str) || 
+          (hero.mainAtr === 'agi' && props.filter.agi) ||
+          (hero.mainAtr === 'int' && props.filter.int)) && css.opacity
+        }
       />
     );
   });

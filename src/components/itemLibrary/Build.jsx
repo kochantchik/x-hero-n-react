@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../css/build.module.css'
+import style from './css/build.module.css'
 
 export default function Build() {
 

@@ -16,9 +16,6 @@ export default function Navbar(props) {
         <NavLink to="/heroes">
           <p className={location.pathname === '/heroes' ? style.active : ''}>Герои</p>
         </NavLink>
-        <NavLink to="/bosses">
-          <p className={location.pathname === '/bosses' ? style.active : ''}>Боссы</p>
-        </NavLink>
         </div>
     </div>
   );

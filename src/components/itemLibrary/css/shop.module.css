@@ -1,0 +1,18 @@
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.column{
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  flex-shrink: 1;
+  background-color: #3b384d;
+  border-radius: 1em;
+  padding: 0.5em;
+  gap: 0.5em;
+  border: 1px solid #918ca7;
+}

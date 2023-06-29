@@ -2,9 +2,38 @@
   grid-column: 2/-2;
   background-color: #857ca5;
   border-radius: 1em;
+  padding: 1em;
+}
+
+.taverns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 1em;
   gap: 1em;
+}
+
+.filter {
+  display: flex;
+  background-color: #3b384d;
+  margin-bottom: 1em;
+  gap: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px 5px #181823;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.filter > img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.filter > p {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gold {
+  color: gold;
 }
